@@ -15,6 +15,7 @@ opt.add_experimental_option("prefs", { \
 "profile.default_content_setting_values.geolocation": 1,
 })
 
+# Write the path where you have kept your Chromedriver in executable_path
 driver = webdriver.Chrome(chrome_options = opt, executable_path="E:\Py\chromedriver.exe")
 Path = "https://accounts.google.com/ServiceLogin/identifier?service=classroom&passive=1209600&continue=https%3A%2F%2Fclassroom.google.com%2F&followup=https%3A%2F%2Fclassroom.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=AddSession"
 driver.get(Path)
